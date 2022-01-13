@@ -1,0 +1,77 @@
+/* 
+ * CSS elements used 
+ *  1) background-color
+ *  2) margin-left
+ *  3) border-bottom
+ *  4) display
+ *  5) flex-flow
+ *  6) justify-content
+ *  7) width
+ *  8) list-style-type
+ *  9) max-width
+ *  10) height
+*/
+
+/* General CSS */
+body {
+  background-color: #FFFAFA;
+  margin: 0%;
+}
+
+.tab_two_spaces {
+  margin-left: 2.5em
+}
+
+/* Navigation Bar*/
+#nav-bar {
+  background-color: #D3D3D3;
+  border-bottom: 1px solid black;
+}
+
+.nav-bar-list-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.row-wrapper-nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.nav-bar-tab {
+  display: inline-block; 
+  font-size: 150%;
+}
+
+.nav-bar-tab-ref {
+  text-decoration: none;
+  color: #696969;
+}
+
+.nav-bar-tab-ref:hover {
+  color: #A9A9A9;
+}
+
+/* Footer */
+#footer {
+  background-color: #D3D3D3;
+  border-top: 1px solid black;
+}
+
+.row-wrapper-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+/* List CSS*/
+.list_without_markers {
+  list-style-type: none;
+}
+
+/*Imgs Css*/
+.profile_picture_size {
+	max-width: 100%;
+  height: 300px;
+}
