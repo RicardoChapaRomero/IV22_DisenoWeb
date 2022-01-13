@@ -15,10 +15,10 @@
 	<nav id="nav-bar">
 		<div class="nav-bar-list-wrapper">
 			<ol class="row-wrapper-nav-bar">
-				<li class= "nav-bar-tab"><a class="nav-bar-tab-ref" href="#">About Me</a></li>
-				<li class= "nav-bar-tab"><a class="nav-bar-tab-ref" href="#">Work Experience</a></li>
-				<li class= "nav-bar-tab"><a class="nav-bar-tab-ref" href="#">Education</a></li>
-			</ol>								
+				<li class="nav-bar-tab"><a class="nav-bar-tab-ref" href="#about_me">About Me</a></li>
+				<li class="nav-bar-tab"><a class="nav-bar-tab-ref" href="#work_experience">Work Experience</a></li>
+				<li class="nav-bar-tab"><a class="nav-bar-tab-ref" href="#education">Education</a></li>
+			</ol>
 		</div>
 	</nav>
 	<!--Header-->
@@ -29,157 +29,165 @@
 				<a href="mailto:ricardochaparomero@gmail.com">ricardochaparomero@gmail.com</a><br>
 				<a href="tel:+528118022349">+52 81 1802 2349</a><br>
 			</address>
-			<p><span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">"The universe doesn't allow
-					perfection."</span><b style="font-size: medium;">- Stephen Hawking</b></p>
+			<div class="quote-container">
+				<span><span class= "stepthen-hawking-quote">"The universe doesn't allow
+						perfection."</span><b style="font-size: medium;">- Stephen Hawking</b></span>
+			</div>
 		</div>
 	</header>
 	<!--Main-->
 	<main>
-		<!--About Me Section-->
-		<section>
-			<div>
-				<h2>About Me</h2>
-				<div class="tab_two_spaces">
-					<img src="../img/profile-picture.jpg" class="profile_picture_size">
-					<p>
-						I'm a digital systems and robotics student that is passionate for living new experiences and learning
-						new things in the process. I find computer science as my passion and I'm eager to improve my skills every
-						day.
-						My hobbies are reading about different sciences (currently Astronomy), playing video games and watching
-						series
-						with my family. Don't hesitate to reach out and chat!
-					</p>
+		<div class="main-container">
+			<!--About Me Section-->
+			<section class="section-wrapper" id="about_me">
+				<div>
+					<h2>About Me</h2>
+					<div class="tab_two_spaces">
+						<img src="../img/profile-picture.jpg" class="profile_picture_size">
+						<p>
+							I'm a digital systems and robotics student that is passionate for living new experiences and
+							learning
+							new things in the process. I find computer science as my passion and I'm eager to improve my
+							skills every
+							day.
+							My hobbies are reading about different sciences (currently Astronomy), playing video games
+							and watching
+							series
+							with my family. Don't hesitate to reach out and chat!
+						</p>
+					</div>
 				</div>
-			</div>
-		</section>
-		<!--Experience Section-->
-		<section>
-			<h2>Experience</h2>
-			<div>
-				<ul class="list_without_markers">
-					<!--Facebook Experience-->
-					<li>
-						<h3>
-							September 2021 - December 2021 |
-							Facebook SWE Intern - Network Routing Team
-						</h3>
-						<ul class="list_without_markers">
-							<li>
-								<h4>
-									Border Gateway Protocol (BGP) CLI migration
-								</h4>
-								<p>
-									Facebook’s data center’s switches run over an operative
-									system called fboss. This OS counts with interfaces developed in
-									python that support data display from the routing protocols they
-									use. For this project, I migrated 18 BGP commands developed in
-									fboss to fboss2, a faster version of fboss that decreased response
-									time of each command by seven times. This migration consisted
-									in the modulation and implementation of each command in a C++
-									developed interface, as well as writing unit tests for the execution
-									of each command.
-								</p>
-							</li>
-						</ul>
-					</li>
-					<!--Google 2021 Experience-->
-					<li>
-						<h3>
-							June 2021 - September 2021 |
-							Google SWE Intern - Ads Data Platform Team
-						</h3>
-						<ul class="list_without_markers">
-							<li>
-								<h4>
-									Server-side batching API for database operations
-								</h4>
-								<p>
-									Ad’s data is constantly being saved by inner teams to Google’s
-									database F1. The write operation to this database happens with a
-									synchronous server call where the latency takes the whole write
-									operation to the database. I oversaw the implementation of an API
-									that allowed asynchronous requests by performing batching on
-									the server side, reducing the latency of the call, and improving the
-									performance of the database write operations.
-								</p>
-							</li>
-							<li>
-								<h4>
-									Server-side batching Injection Tool
-								</h4>
-								<p>
-									I wrote a main C++ file that can send requests to the server-side batching
-									API to measure its efficiency and batching operations. This tool can read and
-									write data from F1 to make sure the pre-requisite data is present in the tables
-									and then it performs an RPC request to the server with each individual row
-									update to test batching efficiency.
-								</p>
-							</li>
-						</ul>
-					</li>
-					<!--Google 2020 Experience-->
-					<li>
-						<h3>
-							June 2020 - September 2020 |
-							Google STEP Intern - ChromeOS Accessibility Team
-						</h3>
-						<ul class="list_without_markers">
-							<li>
-								<h4>
-									Full Stack Web Portfolio
-								</h4>
-								<p>
-									As a starter project for the internship, I developed my own web
-									portfolio, where I added information about myself and the projects
-									I've worked in. The project was used to learn the basics of full
-									stack development, test-driven development and unit testing on
-									back-end operations.
-								</p>
-							</li>
-							<li>
-								<h4>
-									Web Application for Street Vendors
-								</h4>
-								<p>
-									Covid-19 affected many businesses worldwide with mandatory
-									lockdowns in some countries. I actively participated on the
-									development of a web application focused on connecting street
-									vendors with clients within a certain radius as an assist to
-									advertise their business during the pandemic where the
-									movement on the streets was reduced at its lowest point. I
-									oversaw handling the user and vendor authentication and
-									registration to use the app as well as adding the home view,
-									tutorial, and navigation bar of the web page.
-								</p>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<!--Education Section-->
-		<section>
-			<h2>Education</h2>
-			<div class="tab_two_spaces">
-				<h3>Robotics and Digital Systems Engineer Student - ITESM</h3>
-				<div class="tab_two_spaces">
-					<p>Expected Graduation Date - June 2023</p>
+			</section>
+			<!--Experience Section-->
+			<section class="section-wrapper" id="work_experience">
+				<h2>Experience</h2>
+				<div>
+					<ul class="list_without_markers">
+						<!--Facebook Experience-->
+						<li>
+							<h3>
+								September 2021 - December 2021 |
+								Facebook SWE Intern - Network Routing Team
+							</h3>
+							<ul class="list_without_markers">
+								<li>
+									<h4>
+										Border Gateway Protocol (BGP) CLI migration
+									</h4>
+									<p>
+										Facebook’s data center’s switches run over an operative
+										system called fboss. This OS counts with interfaces developed in
+										python that support data display from the routing protocols they
+										use. For this project, I migrated 18 BGP commands developed in
+										fboss to fboss2, a faster version of fboss that decreased response
+										time of each command by seven times. This migration consisted
+										in the modulation and implementation of each command in a C++
+										developed interface, as well as writing unit tests for the execution
+										of each command.
+									</p>
+								</li>
+							</ul>
+						</li>
+						<!--Google 2021 Experience-->
+						<li>
+							<h3>
+								June 2021 - September 2021 |
+								Google SWE Intern - Ads Data Platform Team
+							</h3>
+							<ul class="list_without_markers">
+								<li>
+									<h4>
+										Server-side batching API for database operations
+									</h4>
+									<p>
+										Ad’s data is constantly being saved by inner teams to Google’s
+										database F1. The write operation to this database happens with a
+										synchronous server call where the latency takes the whole write
+										operation to the database. I oversaw the implementation of an API
+										that allowed asynchronous requests by performing batching on
+										the server side, reducing the latency of the call, and improving the
+										performance of the database write operations.
+									</p>
+								</li>
+								<li>
+									<h4>
+										Server-side batching Injection Tool
+									</h4>
+									<p>
+										I wrote a main C++ file that can send requests to the server-side batching
+										API to measure its efficiency and batching operations. This tool can read and
+										write data from F1 to make sure the pre-requisite data is present in the tables
+										and then it performs an RPC request to the server with each individual row
+										update to test batching efficiency.
+									</p>
+								</li>
+							</ul>
+						</li>
+						<!--Google 2020 Experience-->
+						<li>
+							<h3>
+								June 2020 - September 2020 |
+								Google STEP Intern - ChromeOS Accessibility Team
+							</h3>
+							<ul class="list_without_markers">
+								<li>
+									<h4>
+										Full Stack Web Portfolio
+									</h4>
+									<p>
+										As a starter project for the internship, I developed my own web
+										portfolio, where I added information about myself and the projects
+										I've worked in. The project was used to learn the basics of full
+										stack development, test-driven development and unit testing on
+										back-end operations.
+									</p>
+								</li>
+								<li>
+									<h4>
+										Web Application for Street Vendors
+									</h4>
+									<p>
+										Covid-19 affected many businesses worldwide with mandatory
+										lockdowns in some countries. I actively participated on the
+										development of a web application focused on connecting street
+										vendors with clients within a certain radius as an assist to
+										advertise their business during the pandemic where the
+										movement on the streets was reduced at its lowest point. I
+										oversaw handling the user and vendor authentication and
+										registration to use the app as well as adding the home view,
+										tutorial, and navigation bar of the web page.
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</section>
+			</section>
+			<!--Education Section-->
+			<section class="section-wrapper" id="education">
+				<h2>Education</h2>
+				<div class="tab_two_spaces">
+					<h3>Robotics and Digital Systems Engineer Student - ITESM</h3>
+					<div class="tab_two_spaces">
+						<p>Expected Graduation Date - June 2023</p>
+					</div>
+				</div>
+			</section>
+		</div>
 	</main>
 	<!--Footer-->
 	<footer id="footer">
 		<div class="nav-bar-list-wrapper">
-		<ol class="row-wrapper-footer">
-			<li class= "nav-bar-tab">
-				<a class="nav-bar-tab-ref" href="https://github.com/RicardoChapaRomero" target="_blank">Github</a>
-			</li>
-			<li class= "nav-bar-tab">
-				<a class="nav-bar-tab-ref" href="https://www.linkedin.com/in/ricardo-chapa-romero-a4b277133/" target="_blank">LinkedIn</a>
-			</li>
-		</ol>
-	</div>
+			<ol class="row-wrapper-footer">
+				<li class="nav-bar-tab">
+					<a class="nav-bar-tab-ref" href="https://github.com/RicardoChapaRomero" target="_blank">Github</a>
+				</li>
+				<li class="nav-bar-tab">
+					<a class="nav-bar-tab-ref" href="https://www.linkedin.com/in/ricardo-chapa-romero-a4b277133/"
+						target="_blank">LinkedIn</a>
+				</li>
+			</ol>
+		</div>
 	</footer>
 </body>
 
