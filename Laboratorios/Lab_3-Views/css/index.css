@@ -41,6 +41,17 @@ body {
   padding: 5%;
 }
 
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-inline: 10%;
+}
+
+.social_icon {
+  list-style: none;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
   /* Header */
