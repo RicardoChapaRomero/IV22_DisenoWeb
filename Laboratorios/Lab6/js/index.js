@@ -30,7 +30,7 @@ $('.agregar').on('click', (main_event) => {
 });
 
 $('.Lista').on('click', '.checar', function (e) {
-  $(this).parent().css('text-decoration', 'line-through');
+  $(this).parent().toggleClass('line_text');
 });
 
 $('.Lista').on('click', '.del', function (e) {
