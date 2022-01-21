@@ -36,3 +36,4 @@ $('.Lista').on('click', '.checar', function (e) {
 $('.Lista').on('click', '.del', function (e) {
   $(this).parent().remove();
 });
+
