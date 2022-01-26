@@ -37,12 +37,13 @@ const gifSearch = (food) => {
         $('#food').append(foodGif);
       });
 
-      $('img').hover(function () {
-        this.src = this.dataset.gifUrl
-      },
-        function () {
+      $('img').on('click', function () {
+        if (this.src == this.dataset.gifUrl) {
           this.src = this.dataset.imgUrl
-        })
+        } else {
+          this.src = this.dataset.gifUrl
+        }
+      });
     });
 }
 
